@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    input{
+      width: 1000px;
+      height: 200px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" placeholder="text...">
+  <script>
+    var arr = 'Đương nhiên là có rồi',
+    heard = ' <3',
+    count = 0;
+    document.querySelector('input').addEventListener('keyup',()=>{
+      document.querySelector('input').value = ''
+      if(count < arr.length){
+        for(let i = 0; i <= count; i++){
+          document.querySelector('input').value += arr[i]
+        }
+        count++;
+      }
+      else{
+        arr += heard;
+        for(let i = 0; i < arr.length; i++){
+          document.querySelector('input').value += arr[i]
+        }
+      }
+    })
+  </script>
+</body>
+</html>

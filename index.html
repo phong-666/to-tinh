@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>CHẠM VÀO ĐÂY</title>
+    <!-- Tiêu đề của trang -->
+    <meta name="description" content="Đoán xem có điều gì bất ngờ tại đây?" />
+    <!-- Description ngắn -->
+    <meta
+      property="og:image"
+      content="https://minhchuit.net/images/cham-vao-day.png"
+    />
+    <meta property="og:title" content="CHẠM VÀO ĐÂY" />
+    <!-- Tiêu đề của trang -->
+    <meta property="og:type" content="website" />
+    <meta name="author" content="NGUYEN MINH CHU" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://minhchuit.net/css/valentine.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+      integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+      integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://minhchuit.net/css/fontawesome-free-5.12.1-web/css/all.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      language="javascript"
+      src="https://minhchuit.net/js/jquery-3.3.1.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".title").click(function () {
+          $(".container").addClass("open");
+        });
+        $(".close").click(function () {
+          $(".container").removeClass("open");
+        });
+      });
+    </script>
+  </head>
+  <body class="dark">
+    <div class="bgoverlay">
+      <div class="container">
+        <span class="ico">
+          <span class="ico2"></span>
+          <span class="title"
+            >Chạm Vào<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đây</span
+          >
+        </span>
+        <div class="endtext">
+          <h1>Hây !!!</h1>
+          <h2>
+            An có thấy p giống định mệnh của mình <i class="fas fa-heart"></i>
+          </h2>
+          <h2></h2>
+          <div id="all">
+            <button class="a" onclick="disagree()">Không</button>
+            <button class="b">
+              Có
+              <!-- <a href="https://m.me/100009287844892">Có</a> -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="confession-girl">
+      <div class="content-confes">
+        <p>an</p>
+        <p>đồng</p>
+        <p>ý</p>
+        <p>làm</p>
+        <p>bạn</p>
+        <p>gái</p>
+        <p>p</p>
+        <p>nhé</p>
+      </div>
+      <div class="btn-accept">
+        <a href="https://m.me/100009287844892">đồng ý</a>
+        <a href="https://m.me/100009287844892">đồng ý</a>
+      </div>
+    </div>
+    <div class="bg-agree">
+      <div class="agree-comment dis-agree">
+        <div class="slides">
+          <div class="slide slide-1">
+            <h3 class="">Cảm nhận an về p</h3>
+            <input type="text" placeholder="Đáp án đây nè ..." />
+            <button>Tiếp</button>
+          </div>
+          <div class="slide slide-2">
+            <h3 class="">Thiếu An thì p trở nên cằn cỗi mất nên là</h3>
+            <div class="btn-ag">
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <p><img src="images/bow-box.png" alt=""></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dis-agree">
+      <div class="dis-agree">
+        <h3>Thêm cho vui thôi chứ không nhấn được đâu đồ ngốc</h3>
+      </div>
+      <div class="git-content">
+        <img
+          src="https://media2.giphy.com/media/VGiQCokc0t04tE7b1P/200.webp"
+          alt=""
+        />
+      </div>
+    </div>
+    <script>
+      const widthSlides = document.querySelector(".agree-comment"),
+        slide = document.querySelectorAll(".slide");
+      let tam = 150,
+        setTime;
+      document.querySelector("button.b").addEventListener("click", () => {
+        document.querySelector(".bg-agree").classList.toggle("display");
+
+        var x = setInterval(() => {
+          document.querySelector(".slide-1 h3").style.opacity = 1;
+          document.querySelector(".slide-1 h3").style.marginLeft = 0;
+
+          document.querySelector(".slide-1 input").style.opacity = 1;
+          document.querySelector(".slide-1 input").style.marginLeft = 0;
+          document.querySelector(".slide-1 input").style.transitionDelay =
+            0.75 + "s";
+
+          document.querySelector(".slide-1 button").style.opacity = 1;
+          document.querySelector(".slide-1 button").style.marginLeft = 0;
+          document.querySelector(".slide-1 button").style.transitionDelay =
+            1.5 + "s";
+
+          clearInterval(x);
+        }, 0);
+      });
+      document.querySelectorAll(".slide button")[0].onclick = function () {
+        document.querySelector(".slide-1").style.opacity = 0;
+        document.querySelector(".slide-1").style.marginLeft = -30 + "px";
+
+        setTime = setInterval(() => {
+          runSlide();
+        }, 500);
+      };
+
+      function runSlide() {
+        document.querySelector(".slides").style.marginTop += -150 + "px";
+        // document.querySelector('')
+        clearInterval(setTime);
+      }
+      console.log(slide[0].offsetWidth);
+      function disagree() {
+        document.querySelector(".bg-dis-agree").classList.add("active");
+        var option = setInterval(() => {
+          document.querySelector(".bg-dis-agree").classList.remove("active");
+          clearInterval(option);
+          document.querySelector("button.a").style.display = "none";
+        }, 3000);
+      }
+      const listDocument = document.querySelectorAll(".content-confes p");
+
+      document.querySelector(".btn-ag p").addEventListener("click", () => {
+        document.querySelector(".confession-girl").style.display = "block";
+        var confession = setInterval(() => {
+          let timeInter = setInterval(() => {
+            let timeDown = 0
+            for(let i = 0; i < listDocument.length; i++){
+              listDocument[i].style.transitionDelay = timeDown + 's'
+              listDocument[i].style.opacity = 1
+              listDocument[i].style.marginTop = 0
+              timeDown += 0.4;
+            }
+            console.log('1')
+            clearInterval(timeInter)
+
+          }, 1500);
+
+          document.querySelector('.btn-accept').style.opacity = 1
+          document.querySelector('.btn-accept').style.marginTop = 40 + 'px'
+
+          document.querySelector(".confession-girl").style.opacity = 1;
+          document.querySelector(".confession-girl").style.left = 0;
+
+          clearInterval(confession);
+        }, 1000);
+      });
+
+      var arr = "Thông minh, biết quan tâm .........",
+        count = 0;
+      document.querySelector("input").addEventListener("keyup", () => {
+        document.querySelector("input").value = "";
+        if (count < arr.length) {
+          for (let i = 0; i <= count; i++) {
+            document.querySelector("input").value += arr[i];
+          }
+          count++;
+        } else {
+          for (let i = 0; i < arr.length; i++) {
+            document.querySelector("input").value += arr[i];
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
